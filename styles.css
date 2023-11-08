@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root {
+    --clr-light-cyan: hsl(193, 38%, 86%);
+    --clr-neon-green: hsl(150, 100%, 66%);
+    --clr-grayish-blue: hsl(217, 19%, 38%);
+    --clr-dk-grayish-blue: hsl(217, 19%, 24%);
+    --clr-dk-blue: hsl(218, 23%, 16%);
+    --clr-dk-background: hsl(240, 2%, 8%);
+
+    --font-weight: 800;
+    --font-size-sm: 12px;
+    --font-size-quote: 28px;
+    --font-family: 'Manrope', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--clr-dk-blue);
+    place-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+span {
+    margin-right: 5px;
+}
+
+.advice-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #313A49;
+    position: relative;
+    border-radius: 10px;
+    background-color: var(--clr-dk-grayish-blue);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    max-width: 500px;
+}
+
+.advice-number {
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: var(--font-size-sm);
+    letter-spacing: 3px;
+    color: var(--clr-neon-green);
+    width: 100%;
+    padding: 30px 0;
+}
+
+.advice-quote {
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: var(--font-size-quote);
+    font-weight: var(--font-weight);
+    color: var(--clr-light-cyan);
+    width: 100%;
+    padding: 0 30px;
+    margin-bottom: 30px;
+}
+
+.divide {
+    width: auto;
+    height: auto;
+    max-width: none;
+    padding-bottom: 70px;
+}
+
+.advice-button {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--clr-neon-green);
+    border-radius: 50%;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.advice-button:hover {
+    box-shadow: 0px 0px 20px 0px var(--clr-neon-green);
+}
+
+.advice-button-image {
+    background-color: var(--clr-neon-green);
+}
+
+.attribution {
+    position: fixed;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--clr-light-cyan);
+    font-family: var(--font-family);
+    font-size: var(--font-size-sm);
+}
+
+.attribution a {
+    color: var(--clr-grayish-blue);
+    text-decoration: none;
+}
